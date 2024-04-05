@@ -1,0 +1,25 @@
+.comingSoon{
+    height: 100vh;
+    padding: 4rem;
+}
+.comingSoon img{
+    max-width: 600px;
+    margin-left: -5rem;
+}
+.comingSoon h1, p{
+    color: var(--description);
+}
+
+@media screen and (max-width: 768px){
+    .comingSoon{
+        padding: 2rem;
+    }
+    .comingSoon img{
+        max-width: 400px;
+        margin-left: -2rem;
+    }
+    .comingSoon h1{
+        font-size: 2rem;
+    }
+    
+}
