@@ -21,7 +21,7 @@ const ComingSoon = () => {
             <h1>Coming Soon</h1>
             <p>Sign Up to Our newsletter to get notified when we launch </p>
           </Flex>
-          <Flex gap="small">
+          <Flex gap="small" style={{height : "50px"}}>
             <input type="text" className="input" placeholder="Enter your email..."/>
             <button className="btn">Subscribe</button>
           </Flex>
