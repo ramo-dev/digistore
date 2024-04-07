@@ -9,10 +9,11 @@
 .comingSoon h1, p{
     color: var(--description);
 }
-.comingSoon input{
-    font-size: 1rem;
+.comingSoon .subscribeForm{
+    display: flex;
+    height: 50px;
+    gap: .5rem;
 }
-
 @media screen and (max-width: 768px){
     .comingSoon{
         padding: 2rem;
