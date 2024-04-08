@@ -12,7 +12,7 @@ const ComingSoon = () => {
 
   async function MailSubscriber(email) {
     try {
-      await fetch(import.meta.env.VITE_APP_SENDSUB_API_URL, {
+      await fetch("https://digistore-backend.onrender.com/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
