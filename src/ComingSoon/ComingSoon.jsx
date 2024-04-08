@@ -12,12 +12,12 @@ const ComingSoon = () => {
 
   async function MailSubscriber(email) {
     try {
-      await fetch("http://localhost:5100/subscribe", {
+      await fetch(import.meta.env.VITE_APP_SENDSUB_API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email : email}), // Send only the email
+        body: JSON.stringify({ email: email }), // Send only the email
       });
     } catch (err) {
       console.error(err);
