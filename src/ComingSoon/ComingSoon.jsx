@@ -8,7 +8,7 @@ import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 
 const ComingSoon = () => {
   const [email, setEmail] = useState("");
-
+  const [loading, setLoading] = useState(false);
 
   async function MailSubscriber(email) {
     try {
@@ -27,25 +27,27 @@ const ComingSoon = () => {
   const handleFormsubmit = async (e) => {
     e.preventDefault();
     const inputEmail = e.target[0].value;
-
+    setLoading(true); // Set loading state to true when form is submitted
     if (inputEmail) {
       const emailExists = await emailAlreadyExists(inputEmail);
       if (!emailExists) {
         await addSubscriber(inputEmail);
+        await MailSubscriber(inputEmail);
         toast.success(
           `Thank you for subscribing! You will be notified when we launch.`
         );
         setTimeout(()=>{
-          toast.info("If you don't receive an email, please check your spam folder.")
-        },2000)
-        await MailSubscriber(inputEmail);
+          toast.info(
+            `If you didn't receive an email, please check your spam folder.`
+          );
+        },3000)
       } else {
         toast.error(`This email is already subscribed.`);
       }
     } else {
       toast.error(`Please enter a valid email.`);
     }
-
+    setLoading(false); // Set loading state back to false after form submission
     e.target.reset();
   };
 
@@ -96,7 +98,9 @@ const ComingSoon = () => {
             placeholder="Enter your email..."
             required
           />
-          <button className="btn">Subscribe</button>
+          <button className="btn" disabled={loading}>
+            {loading ? <span>Loading...</span> : <span>Subscribe</span>}
+          </button>
         </form>
       </Flex>
       <footer>
