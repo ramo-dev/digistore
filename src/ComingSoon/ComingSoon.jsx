@@ -9,6 +9,21 @@ import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 const ComingSoon = () => {
   const [email, setEmail] = useState("");
 
+
+  async function MailSubscriber(email) {
+    try {
+      await fetch("http://localhost:5100/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email : email}), // Send only the email
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   const handleFormsubmit = async (e) => {
     e.preventDefault();
     const inputEmail = e.target[0].value;
@@ -20,6 +35,10 @@ const ComingSoon = () => {
         toast.success(
           `Thank you for subscribing! You will be notified when we launch.`
         );
+        setTimeout(()=>{
+          toast.info("If you don't receive an email, please check your spam folder.")
+        },2000)
+        await MailSubscriber(inputEmail);
       } else {
         toast.error(`This email is already subscribed.`);
       }
