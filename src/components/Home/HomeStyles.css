@@ -235,11 +235,10 @@
 /* NewsLetter */
 
 .newsLetter {
-  height: 100vh;
+  height: 120vh;
   gap: 2rem;
   display: flex;
   /* width: 80%; */
-  height: 100vh;
   margin: 0 auto;
   justify-content: center;
   flex-direction: column;
@@ -250,7 +249,7 @@
     var(--background-color),
     var(--primary-color)
   ); */
-  background: url("../../assets/stacked-steps-haikei.svg") no-repeat center/cover;
+  background: url("../../assets/Layered.svg") no-repeat center/cover;
 }
 .newsLetter h1 {
   font-size: 3rem;
@@ -268,12 +267,12 @@
 }
 .newsLetter .newsLetterText h2 {
   font-size: 2rem;
-  width: 100%;
+  width: 110%;
 }
 .newsLetter .newsLetterText p {
   font-size: 1.1rem;
   width: 100%;
-  color: var(--color-white);
+  color: var(--color);
 }
 .newsLetter h2 {
   width: 350px;
