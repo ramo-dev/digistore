@@ -349,7 +349,7 @@
     text-align: center;
   }
   .MainComponent .HeroText .btn {
-    width: 50%;
+    width: 100%;
     font-size: 1.1rem;
     padding: 0.6rem 1rem;
     white-space: nowrap;
