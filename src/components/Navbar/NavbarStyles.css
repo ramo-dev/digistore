@@ -109,7 +109,7 @@
 .drawer-menu ul a *{
     font-size: 2rem !important;
     &:hover{
-            color: var(--primary-color) !important;
+      color: var(--primary-color) !important;
     }
 }
 .menu-icon{
@@ -136,6 +136,15 @@
 .none {
   display: none;
 }
+@media (max-width: 1224px){
+  .navbar{
+    padding: 1rem 2rem;
+    gap: 25%;
+  }
+  .navbar ul li{
+    color: black;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -151,6 +160,7 @@
     width: 100%;
     background-color: var(--background-color);
     display: none;
+    
   }
   .navbar .logo * {
     font-size: 2rem;
@@ -162,9 +172,11 @@
   .navbar ul li {
     font-size: 1.5rem;
     white-space: nowrap;
+          color: red !important;
   }
   .navbar ul a.btn {
     font-size: 1.5rem;
+ 
   }
   .drawer-menu .backbtn{
     border: none;

@@ -40,11 +40,13 @@ const HomeComponent = () => {
         <img src={HeroImg} alt="Photo By Bwana Omar on Unsplash" />
       </Flex>
       <Flex className="Homesection" wrap="wrap">
-        <img
-          src={HeroImg2}
-          alt="Photo By Bwana Omar on Unsplash"
-          className={`circleImage ${fadeIn ? "fadeInLeft" : ""}`}
-        />
+        <Flex className="HomesectionImageWrapper">
+          <img
+            src={HeroImg2}
+            alt="Photo By Bwana Omar on Unsplash"
+            className={`circleImage ${fadeIn ? "fadeInLeft" : ""}`}
+          />
+        </Flex>
         <Flex vertical className={`TextArea1 ${fadeIn ? "fadeInRight" : ""}`}>
           <h3>Explore, Connect, and Share Your Unique Skills and Services</h3>
           <p>
@@ -59,7 +61,6 @@ const HomeComponent = () => {
       <Flex
         className="Homesection Homesection2"
         style={{ flexDirection: "row-reverse" }}
-        
       >
         <img
           src={HeroImg3}
@@ -208,7 +209,7 @@ const HomeComponent = () => {
             </p>
           </Flex>
           <form>
-            <Flex>
+            <Flex wrap="wrap">
               <input type="email" placeholder="Enter your email" />
               <button className="btn">Subscribe</button>
             </Flex>
