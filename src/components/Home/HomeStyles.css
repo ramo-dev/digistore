@@ -322,7 +322,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: -1rem;
+    margin-top: -2rem;
   }
   .MainComponent .HeroText span {
     color: var(--primary-color);
