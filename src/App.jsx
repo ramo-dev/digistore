@@ -11,8 +11,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" Component={ComingSoon}/>
-        <Route path='/home' Component={Home}/>
+        <Route exact path="/coming" Component={ComingSoon}/>
+        <Route path='/' Component={Home}/>
         <Route path="/register" Component={Register}/>
         <Route path="/login" Component={Login}/>
       </Routes>
