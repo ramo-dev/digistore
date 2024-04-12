@@ -318,6 +318,7 @@
   .MainComponent .HeroText {
     width: 100%;
     white-space: wrap;
+    margin-top: -2rem;
   }
   .MainComponent .HeroText span {
     color: var(--primary-color);
