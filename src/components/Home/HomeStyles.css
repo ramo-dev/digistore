@@ -348,7 +348,7 @@
 
   /* sec 1 */
   .circleImage {
-    margin-top: -5rem;
+    margin-top: -6rem;
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -365,7 +365,7 @@
   }
   .Homesection .TextArea1 h3 {
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .Homesection .TextArea1 p {
     font-size: 1rem;
@@ -381,7 +381,7 @@
     position: relative;
   }
   .Homesection2 {
-    margin: 13rem 0;
+    margin: 10rem 0;
     padding: 0 1rem;
     display: block;
     flex-direction: column;
@@ -390,7 +390,7 @@
   .Homesection3 {
     display: flex;
     flex-direction: column;
-    margin-top: 17rem;
+    margin-top: 10rem;
     width: 100%;
     height: 100vh;
   }
