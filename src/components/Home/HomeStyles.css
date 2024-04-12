@@ -313,12 +313,15 @@
     padding: 1rem;
     text-align: center;
     align-items: center;
+    justify-content: center;
   }
 
   .MainComponent .HeroText {
     width: 100%;
     white-space: wrap;
-    margin-top: -2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .MainComponent .HeroText span {
     color: var(--primary-color);
@@ -366,7 +369,7 @@
   }
   .Homesection .TextArea1 h3 {
     font-size: 1.5rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
   .Homesection .TextArea1 p {
     font-size: 1rem;
@@ -382,7 +385,7 @@
     position: relative;
   }
   .Homesection2 {
-    margin: 10rem 0;
+    margin: 8rem 0;
     padding: 0 1rem;
     display: block;
     flex-direction: column;
