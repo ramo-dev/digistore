@@ -40,13 +40,11 @@ const HomeComponent = () => {
         <img src={HeroImg} alt="Photo By Bwana Omar on Unsplash" />
       </Flex>
       <Flex className="Homesection" wrap="wrap">
-        <Flex className="HomesectionImageWrapper">
-          <img
-            src={HeroImg2}
-            alt="Photo By Bwana Omar on Unsplash"
-            className={`circleImage ${fadeIn ? "fadeInLeft" : ""}`}
-          />
-        </Flex>
+        <img
+          src={HeroImg2}
+          alt="Photo By Bwana Omar on Unsplash"
+          className={`circleImage ${fadeIn ? "fadeInLeft" : ""}`}
+        />
         <Flex vertical className={`TextArea1 ${fadeIn ? "fadeInRight" : ""}`}>
           <h3>Explore, Connect, and Share Your Unique Skills and Services</h3>
           <p>
@@ -61,6 +59,7 @@ const HomeComponent = () => {
       <Flex
         className="Homesection Homesection2"
         style={{ flexDirection: "row-reverse" }}
+        
       >
         <img
           src={HeroImg3}
