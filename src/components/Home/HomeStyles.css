@@ -316,7 +316,7 @@
   }
 }
 
-@media screen and (max-width:1024){
+/* @media screen and (max-width:1024){
   .MainComponent img {
     border-radius: 100%;
     display: none;
@@ -328,10 +328,10 @@
     align-items: center;
     justify-content: center;
   }
-}
+} */
 
 /* Media Query */
-@media screen and (max-width: 850px) {
+@media (max-width: 1224px) {
   .MainComponent {
     display: flex;
     overflow-x: hidden;
@@ -340,14 +340,15 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .MainComponent .HeroText {
     width: 100%;
     white-space: wrap;
     margin-top: -2rem;
-      align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .MainComponent .HeroText span {
     color: var(--primary-color);
@@ -368,6 +369,7 @@
     display: flex;
     width: 100%;
     text-align: center;
+    justify-content: center;
   }
   .MainComponent .HeroText .btn {
     width: 100%;
@@ -385,13 +387,16 @@
   }
   .Homesection {
     padding: 1rem;
+    width: 100%;
   }
   .TextArea1 {
     width: 100%;
+    text-align: center;
   }
   .Homesection img {
     object-fit: cover;
     height: 50%;
+    width: 100%;
   }
   .Homesection .TextArea1 h3 {
     font-size: 1.5rem;
@@ -409,12 +414,14 @@
     height: 50%;
     border-radius: 10px;
     position: relative;
+    width: 100%;
   }
   .Homesection2 {
     margin: 8rem 0;
     padding: 0 1rem;
     display: block;
     flex-direction: column;
+    
   }
 
   .Homesection3 {
@@ -429,6 +436,7 @@
     flex-direction: column;
     width: 100%;
     margin-top: -5rem;
+    text-align: center;
   }
   .Homesection3 .textArea3 h3 {
     font-size: 1.7rem;
