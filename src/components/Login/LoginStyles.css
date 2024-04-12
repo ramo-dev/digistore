@@ -1,0 +1,34 @@
+.LoginPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+.LoginPage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.LoginPage form{
+    width: 60%;
+    padding: 3rem;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.LoginPage form input{
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    outline : 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.LoginPage form button{
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+}

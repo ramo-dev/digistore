@@ -57,10 +57,10 @@ const Navbar = () => {
             <Link to="/about" className="btn">
               <li>About</li>
             </Link>
-            <Link to="/contact" className="btn">
+            <Link to="/register" className="btn">
               <li>Sign Up</li>
             </Link>
-            <Link to="/contact" className="btn">
+            <Link to="/login" className="btn">
               <li>Login</li>
             </Link>
           </ul>
@@ -83,10 +83,10 @@ const Navbar = () => {
           <Link to="/about" className="btn" onClick={handleToggleDrawer}>
             <li>About</li>
           </Link>
-          <Link to="/contact" className="btn" onClick={handleToggleDrawer}>
+          <Link to="/register" className="btn" onClick={handleToggleDrawer}>
             <li>Sign Up</li>
           </Link>
-          <Link to="/contact" className="btn" onClick={handleToggleDrawer}>
+          <Link to="/login" className="btn" onClick={handleToggleDrawer}>
             <li>Login</li>
           </Link>
         </ul>

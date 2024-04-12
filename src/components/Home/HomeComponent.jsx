@@ -7,6 +7,7 @@ import HeroImg3 from "../../assets/Hero4.jpg";
 import "./HomeStyles.css";
 import Footer from "../Footer/Footer";
 import MouseScroll from "./UI/MouseScroll";
+import { Link } from "react-router-dom";
 const HomeComponent = () => {
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -28,8 +29,12 @@ const HomeComponent = () => {
             with ease
           </p>
           <Flex gap="1rem" style={{ margin: "1rem 0" }} className="HeroButtons">
-            <button className="btn">Sell Services</button>
-            <button className="btn inverse-btn">Buy Services</button>
+            <Link to="/register=as=seller">
+              <button className="btn">Sell Services</button>
+            </Link>
+            <Link to="/register">
+              <button className="btn inverse-btn">Buy Services</button>
+            </Link>
           </Flex>
         </Flex>
         <img src={HeroImg} alt="Photo By Bwana Omar on Unsplash" />
@@ -54,6 +59,7 @@ const HomeComponent = () => {
       <Flex
         className="Homesection Homesection2"
         style={{ flexDirection: "row-reverse" }}
+        
       >
         <img
           src={HeroImg3}
@@ -75,7 +81,6 @@ const HomeComponent = () => {
         </Flex>
       </Flex>
 
-
       {/* Register options */}
       <Flex
         className="Homesection Homesection3"
@@ -87,7 +92,12 @@ const HomeComponent = () => {
           <div className="backgroundImg"></div>
           <h3>Built with Entrepreneurs for Entrepreneurs</h3>
 
-          <Flex gap="3rem" style={{ marginTop: "1.5rem" }} wrap="wrap" className="HomeSectoion3Wrapper">
+          <Flex
+            gap="3rem"
+            style={{ marginTop: "1.5rem" }}
+            wrap="wrap"
+            className="HomeSectoion3Wrapper"
+          >
             <Flex
               vertical
               style={{ maxWidth: "450px" }}

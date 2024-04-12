@@ -14,11 +14,11 @@
   color: var(--primary-color);
 }
 .MainComponent .HeroText h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   white-space: wrap;
-  width: 130%;
+  width: 100%;
   z-index: 1;
-  margin: 5rem 0 10px 0;
+  margin: 3rem 0 10px 0;
 }
 .MainComponent .HeroText p {
   font-size: 1.5rem;
@@ -28,7 +28,7 @@
 .MainComponent img {
   position: absolute;
   right: 0;
-  width: 690px;
+  width: 50%;
   height: 110vh;
   border-bottom-left-radius: 50%;
   z-index: -1;
@@ -36,19 +36,22 @@
   /* opacity: 0.87; */
   filter: contrast(0.7);
 }
-.circleImage {
-  border-radius: 100%;
-  width: 45%;
-  height: 90%;
-}
+
 .Homesection {
   height: 100vh;
   margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 0 3rem;
+  gap: 3rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+.circleImage {
+  display: flex;
+  border-radius: 100%;
+  width: 500px;
+  height: 500px;
 }
 .TextArea1 {
   width: 50%;
@@ -63,6 +66,7 @@
 }
 .Homesection img {
   object-fit: cover;
+  
 }
 .Homesection .TextArea1 h3 {
   color: var(--primary-color);
@@ -77,6 +81,7 @@
 /* .Homesection .circleImage.fadeInLeft{
     animation: fadeLeft 12s ease-in;
 } */
+
 
 .Homesection2 img {
   position: absolute;
@@ -93,6 +98,8 @@
   justify-content: start;
   text-align: end;
   padding: 0 0 0 5rem;
+  align-items: center;
+  width: 100%;
 }
 
 @keyframes fadeLeft {
