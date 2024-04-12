@@ -200,7 +200,7 @@ const HomeComponent = () => {
         <Flex gap="3rem" align="center" className="NewsLetterWrapper">
           <Flex vertical className="newsLetterText">
             <h2>
-              Subscrbe to Our newsletter to get latest updates on DIgiStore
+              Subscribe to Our newsletter to get latest updates on DIgiStore
             </h2>
             <p>
               Join 90,000 Subscribers from the everywhere in the world. We'll
