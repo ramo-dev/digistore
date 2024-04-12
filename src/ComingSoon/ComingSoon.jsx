@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast, Toaster } from "sonner";
+import { LoadingOutlined } from "@ant-design/icons";
 import { Flex } from "antd";
 import "./ComingSoonStyles.css";
 import { db } from "../utils/firebase";
@@ -99,7 +100,7 @@ const ComingSoon = () => {
             required
           />
           <button className="btn" disabled={loading}>
-            {loading ? <span>Loading...</span> : <span>Subscribe</span>}
+            {loading ? <LoadingOutlined spin /> : <span>Subscribe</span>}
           </button>
         </form>
       </Flex>

@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
-  --primary-color : #BF666B;
-  --background-color : #F1F1F1;
+  --primary-color : teal;
+  /* --background-color : #F1F1F1; */
+  --background-color : #fdf1eb;
   --description : #575757;
-  --secondary-color : #D9D9D9;
+  --secondary-color : rgb(150, 125, 116);
   --color : #000000;
   --color-white: #ffffff;
   --border-radius : 5px;
   --font-family : "Poppins", sans-serif;
+  /* color : #BF666B */
 }
 
 *{
@@ -16,20 +18,46 @@
   padding : 0;
   box-sizing : border-box;
   font-family : var(--font-family);
+  /* color:tomato */
 }
 body{
   background-color: var(--background-color);
 }
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
 .btn{
   background-color: var(--primary-color);
   color: var(--color-white);
-  padding: 0.5rem 1rem;
-  border: none;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--primary-color);
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  &:hover{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+        border: 2px solid var(--primary-color)
+  }
   /* height: 100%; */
+}
+.inverse-btn{
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  &:hover{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
 }
 .input{
   padding: 0.5rem 1rem;
