@@ -1,19 +1,19 @@
 .navbar {
   padding: 1rem 3rem 1rem 5rem;
   background: transparent;
-  gap: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
+  gap:20%;
   z-index: 2;
   transition: all 0.5s;
   top: 0;
   left: 0;
 }
 .navbar .logo {
-
+  width: 90%;
   font-family: var(--font-player);
   font-size: 2.5rem;
   color: var(--color);
@@ -136,10 +136,11 @@
 .none {
   display: none;
 }
+
 @media (max-width: 1224px){
   .navbar{
     padding: 1rem 2rem;
-    gap: 25%;
+    width:100% ;
   }
   .navbar ul li{
     color: black;
@@ -151,6 +152,7 @@
     gap: 0;
     justify-content: space-between;
     padding: 1.5rem 1rem;
+    gap: 35%;
   }
   .navbar ul {
     display: block;

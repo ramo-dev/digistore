@@ -21,14 +21,14 @@ const HomeComponent = () => {
       <Flex className="MainComponent" wrap="wrap">
         <Flex vertical className="HeroText">
           <h1>
-            <span>DigiStore.</span> The Digital Marketplace for{" "}
+            <span>DigiStore.</span> <br />The Digital Marketplace for{" "}
             <span style={{ color: "var( --color)" }}>Everyone!</span>
           </h1>
           <p>
             Where talent meets opportunity, discover and share diverse services
             with ease
           </p>
-          <Flex gap="1rem" style={{ margin: "1rem 0" }} className="HeroButtons">
+          <Flex gap="1rem" style={{ margin: ""}} className="HeroButtons">
             <Link to="/register=as=seller">
               <button className="btn">Sell Services</button>
             </Link>
@@ -208,10 +208,8 @@ const HomeComponent = () => {
             </p>
           </Flex>
           <form>
-            <Flex wrap="wrap">
               <input type="email" placeholder="Enter your email" />
               <button className="btn">Subscribe</button>
-            </Flex>
           </form>
         </Flex>
       </div>
