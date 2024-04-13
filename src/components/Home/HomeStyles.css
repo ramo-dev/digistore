@@ -86,7 +86,8 @@
 .Homesection .TextArea1 h3 {
   color: var(--primary-color);
   text-align: start;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  width: 120%;
 }
 .Homesection .TextArea1 p {
   text-align: start;
@@ -129,7 +130,8 @@
   text-align: end;
   /* padding: 2rem 0 0 0; */
   align-items: center;
-  height:60vh;
+  height:max-content;
+  margin-top: 2rem;
 }
 .Homesection3 .textArea3 {
   justify-content: center;
@@ -182,7 +184,8 @@
 
 .testimonials {
   align-items: center;
-  height: 60vh;
+  flex-direction: column;
+  height: 100vh;
   margin: 4rem 0 4rem 0;
   display: flex;
   gap: 2rem;
@@ -221,12 +224,12 @@
 
 /* CommunityCount */
 .CommunityCount {
-  height: 50vh;
+  height: 80vh;
   justify-content: center;
   background-color: #242424;
   width: 80%;
   margin: 5rem auto;
-  border-radius: 20px;
+  border-radius: 20px;;
 }
 .CommunityCount h1 {
   font-size: 3.5rem;
@@ -353,12 +356,11 @@
   .MainComponent {
     display: flex;
     overflow-x: hidden;
-    height: 120vh;
+    height: 100vh;
     text-align: center;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: -3rem;
     width: 100%;
     padding:0 1rem;
      
@@ -369,7 +371,7 @@
   .MainComponent .HeroText {
     width: 100%;
     white-space: wrap;
-    /* margin-top: -2rem; */
+    /* margin-top: -1rem; */
     align-items: center;
     justify-content: center;
   }
@@ -377,10 +379,10 @@
     color: var(--primary-color);
   }
   .MainComponent .HeroText h1 {
-    font-size: 3.2rem;
-    line-height: 4rem;
+    font-size: 2.1rem;
+    line-height: 3rem;
     width: 100%;
-    margin-top: -3rem;
+    /* margin-top: -3rem; */
   }
   .MainComponent .HeroText p {
     font-size: 1.2rem;
@@ -456,6 +458,7 @@
     border-radius: 10px;
     position: relative;
     width: 100%;
+
   }
   .Homesection2 {
     /* margin: 8rem 0; */
@@ -464,6 +467,7 @@
     display: block;
     flex-direction: column;
     width: 100%;
+    margin: 0;
   }
   .Homesection .circleImage {
     width: 100%;
@@ -621,11 +625,13 @@
     width: 100%;
   }
   .newsLetter form input{
-    padding: 1.5rem 0 1.5rem 1rem;
-    font-size: 1.4rem;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.2rem;
+    width: 90%;
   }
 .newsLetter form button{
   background-color: #242424;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
+  width: 90%;
 }
 }
