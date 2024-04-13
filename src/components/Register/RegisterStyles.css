@@ -63,9 +63,9 @@
 .RegisterPage form h1{
     position: relative;
     font-size: 2rem;
-    width: 100%;
+    width: 90%;
     color: var(--color);
     filter : none;
-    text-align: center;
+    text-align: start;
 }
 }

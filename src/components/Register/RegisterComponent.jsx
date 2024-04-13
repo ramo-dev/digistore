@@ -10,15 +10,15 @@ const RegisterComponent = () => {
       <form action="">
         <h1>Register Today to start buying</h1>
         <label htmlFor="firstName">First name:</label>
-        <input type="text" name="" id="" />
+        <input type="text" />
         <label htmlFor="secondName">Second name:</label>
-        <input type="text" name="" id="" />
+        <input type="text" />
         <label htmlFor="email">Email:</label>
-        <input type="email" name="" id="" />
+        <input type="email" />
         <label htmlFor="password">Password:</label>
-        <input type="password" name="" id="" />
+        <input type="password" />
         <label htmlFor="confirmPassword">Confirm password:</label>
-        <input type="password" name="" id="" />
+        <input type="password" />
         <button className="btn">Register</button>
         <small>
           Have an account? <Link to="/login">Login</Link>

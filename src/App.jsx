@@ -7,6 +7,7 @@ import Login from "./routes/Login";
 import Register from "./routes/Register";
 import { ScaleLoader } from "react-spinners";
 import { useEffect, useState } from "react";
+import {account} from './utils/firebase'
 
 function App() {
   const [isLoading, setLoading] = useState(true);
