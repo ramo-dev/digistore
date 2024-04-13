@@ -7,17 +7,28 @@
     overflow-y: hidden;
 }
 .LoginPage img{
-    width: 100%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.9;
+
 }
 .LoginPage form{
-    width: 60%;
+    width: 50%;
     padding: 3rem;
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     gap: .4rem;
+}
+.LoginPage form h1{
+      position: absolute;
+    left: 5%;
+    top: 30%;
+    width: 35%;
+    font-size: 4rem;
+    color: var(--color-white);
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 .LoginPage form input{
     padding: 0.5rem 1rem;
@@ -31,4 +42,30 @@
 .LoginPage form button{
     padding: 0.4rem 1rem;
     margin-top: 1rem;
+}
+
+
+@media (max-width: 1224px) {
+.LoginPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+.LoginPage img{
+   display: none;
+
+}
+.LoginPage form{
+    width: 100%;
+}
+.LoginPage form h1{
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    color: var(--color);
+    filter : none
+}
 }

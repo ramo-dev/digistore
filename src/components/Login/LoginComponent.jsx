@@ -1,14 +1,14 @@
 import React from 'react'
 import {Flex} from 'antd'
 import './LoginStyles.css'
-import LoginPage from'../../assets/Layered.svg'
+import LoginPage from'../../assets/LoginImage.jpg'
 import { Link } from 'react-router-dom'
 const LoginComponent = () => {
   return (
     <Flex className="LoginPage">
       <img src={LoginPage} alt="" />
       <form action="">
-        <h1>Login</h1>
+        <h1>Welcome Back</h1>
         <label htmlFor="email">Email:</label>
         <input type="email" name="" id="" />
         <label htmlFor="password">Password:</label>

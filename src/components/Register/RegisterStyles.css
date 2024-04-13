@@ -1,4 +1,4 @@
-.LoginPage{
+.RegisterPage{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,20 +6,20 @@
     width: 100%;
     overflow-y: hidden;
 }
-.LoginPage img{
+.RegisterPage img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.LoginPage form{
-    width: 60%;
+.RegisterPage form{
+    width: 70%;
     padding: 3rem;
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     gap: .4rem;
 }
-.LoginPage form input{
+.RegisterPage form input{
     padding: 0.5rem 1rem;
     border: 2px solid var(--secondary-color);
     border-radius: var(--border-radius);
@@ -28,7 +28,44 @@
     height: 100%;
     transition: all 0.3s ease-in-out;
 }
-.LoginPage form button{
+.RegisterPage form h1{
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    width: 35%;
+    font-size: 4rem;
+    color: var(--color-white);
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+
+}
+.RegisterPage form button{
     padding: 0.4rem 1rem;
     margin-top: 1rem;
+}
+
+
+@media (max-width: 1224px) {
+.RegisterPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+.RegisterPage img{
+   display: none;
+
+}
+.RegisterPage form{
+    width: 100%;
+}
+.RegisterPage form h1{
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    color: var(--color);
+    filter : none;
+    text-align: center;
+}
 }

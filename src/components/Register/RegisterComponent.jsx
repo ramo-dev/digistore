@@ -1,11 +1,11 @@
 import React from "react";
 import { Flex } from "antd";
 import "./RegisterStyles.css";
-import LoginPage from "../../assets/HeroImg.jpg";
+import LoginPage from "../../assets/RegisterImage.jpg";
 import { Link } from "react-router-dom";
 const RegisterComponent = () => {
   return (
-    <Flex className="LoginPage">
+    <Flex className="RegisterPage">
       <img src={LoginPage} alt="" />
       <form action="">
         <h1>Register Today to start buying</h1>

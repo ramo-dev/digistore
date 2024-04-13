@@ -10,7 +10,7 @@
   --color-white: #ffffff;
   --border-radius : 5px;
   --font-family : "Poppins", sans-serif;
-  /* color : #BF666B */
+
 }
 
 *{
@@ -18,7 +18,6 @@
   padding : 0;
   box-sizing : border-box;
   font-family : var(--font-family);
-  /* color:tomato */
 }
 body{
   background-color: var(--background-color);
@@ -71,4 +70,18 @@ body::-webkit-scrollbar-track {
   &:focus{
     border-color: var(--primary-color);
   }
+}
+
+.loader-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  scale:1.5;
+  transition:all 1s ease-in-out;
 }
