@@ -139,8 +139,8 @@
 
 @media (max-width: 1224px){
   .navbar{
-    padding: 1rem 2rem;
-    width:100% ;
+    padding: 1rem 3rem;
+    width:98% ;
   }
   .navbar ul li{
     color: black;
