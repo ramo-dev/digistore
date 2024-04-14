@@ -107,7 +107,9 @@ const HomeComponent = () => {
               <div className="iconCircle">
                 <RocketOutlined rotate={40} />
               </div>
-              <h2>Create a seller Profile to sell your services</h2>
+              <h2>
+                Create a seller Profile to sell <br /> your services
+              </h2>
               <p>
                 Create a profile and showcase your skills on DigiStore.
                 Highlight your work, expertise, and experience in your
@@ -125,7 +127,9 @@ const HomeComponent = () => {
               <div className="iconCircle">
                 <FileSearchOutlined />
               </div>
-              <h2>Discover and buy services around you.</h2>
+              <h2>
+                Discover and buy services <br /> around you.
+              </h2>
               <p>
                 Discover a diverse range of talents and services posted by
                 individuals across Africa on DigiStore. Explore categories like
