@@ -45,7 +45,7 @@
 }
 
 
-@media (max-width: 1224px) {
+@media (max-width: 780px) {
 .LoginPage{
     display: flex;
     justify-content: center;
@@ -60,6 +60,9 @@
 }
 .LoginPage form{
     width: 100%;
+}
+.LoginPage form h2{
+    display: none;
 }
 .LoginPage form h1{
     position: relative;

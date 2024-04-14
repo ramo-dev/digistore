@@ -23,6 +23,7 @@ const LoginComponent = () => {
       <img src={LoginPage} alt="" />
       <form action="">
         <h1>Welcome Back</h1>
+        <h2>Login</h2>
         <label htmlFor="email">Email:</label>
         <input type="email" onChange={(e) => setEmail(e.target.value)} />
         <label htmlFor="password">Password:</label>

@@ -12,7 +12,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 800);
+      setIsMobile(window.innerWidth < 950);
     };
 
     const handleScroll = () => {

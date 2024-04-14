@@ -1,14 +1,15 @@
 import React from "react";
 import { Flex } from "antd";
 import "./RegisterStyles.css";
-import LoginPage from "../../assets/Layered.svg";
+import LoginPage from "../../assets/RegisterAsSeller.jpg";
 import { Link } from "react-router-dom";
-const RegisterComponent = () => {
+const SellerRegister = () => {
   return (
-    <Flex className="LoginPage">
-      <img src={LoginPage} alt="" />
+    <Flex className="RegisterPage">
+      <img src={LoginPage} alt="" style={{filter : "brightness(0.8)"}}/>
       <form action="">
         <h1>Register as a seller</h1>
+        <h2>Seller Registration</h2>
         <label htmlFor="firstName">First name:</label>
         <input type="text" name="" id="" />
         <label htmlFor="secondName">Second name:</label>
@@ -28,4 +29,4 @@ const RegisterComponent = () => {
   );
 };
 
-export default RegisterComponent;
+export default SellerRegister;

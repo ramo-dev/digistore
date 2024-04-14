@@ -44,7 +44,7 @@
 }
 
 
-@media (max-width: 1224px) {
+@media (max-width: 780px) {
 .RegisterPage{
     display: flex;
     justify-content: center;
@@ -54,11 +54,14 @@
     overflow-y: hidden;
 }
 .RegisterPage img{
-   display: none;
+   display: none; 
 
 }
 .RegisterPage form{
     width: 100%;
+}
+.RegisterPage form h2{
+    display: none;
 }
 .RegisterPage form h1{
     position: relative;

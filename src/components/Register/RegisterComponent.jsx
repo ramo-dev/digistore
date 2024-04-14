@@ -9,6 +9,7 @@ const RegisterComponent = () => {
       <img src={LoginPage} alt="" />
       <form action="">
         <h1>Register Today to start buying</h1>
+        <h2>Register</h2>
         <label htmlFor="firstName">First name:</label>
         <input type="text" />
         <label htmlFor="secondName">Second name:</label>

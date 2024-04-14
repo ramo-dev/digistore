@@ -21,15 +21,16 @@ const HomeComponent = () => {
       <Flex className="MainComponent" wrap="wrap">
         <Flex vertical className="HeroText">
           <h1>
-            <span>DigiStore.</span> <br />The Digital Marketplace for{" "}
+            <span>DigiStore.</span> <br />
+            The Digital Marketplace for{" "}
             <span style={{ color: "var( --color)" }}>Everyone!</span>
           </h1>
           <p>
             Where talent meets opportunity, discover and share diverse services
             with ease
           </p>
-          <Flex gap="1rem" style={{ margin: ""}} className="HeroButtons">
-            <Link to="/register=as=seller">
+          <Flex gap="1rem" style={{ margin: "" }} className="HeroButtons">
+            <Link to="/register/as/seller">
               <button className="btn">Sell Services</button>
             </Link>
             <Link to="/register">
@@ -59,7 +60,6 @@ const HomeComponent = () => {
       <Flex
         className="Homesection Homesection2"
         style={{ flexDirection: "row-reverse" }}
-        
       >
         <img
           src={HeroImg3}
@@ -208,8 +208,8 @@ const HomeComponent = () => {
             </p>
           </Flex>
           <form>
-              <input type="email" placeholder="Enter your email" />
-              <button className="btn">Subscribe</button>
+            <input type="email" placeholder="Enter your email" />
+            <button className="btn">Subscribe</button>
           </form>
         </Flex>
       </div>
